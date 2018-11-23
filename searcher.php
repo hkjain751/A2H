@@ -1,0 +1,12 @@
+<?php
+session_start();
+if($_GET['search'])
+{
+$_SESSION['search']=$_GET['search'];
+header("location:search.php");
+}
+else
+{
+header("location:index.php");
+}
+?>

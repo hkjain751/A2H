@@ -1,0 +1,11 @@
+<?php 
+session_start();
+if(isset($_SESSION['username']))
+		  {
+		  header('location:order.php');
+		  }
+else
+		  {
+		  header('location:login.php');
+		  }
+?>
